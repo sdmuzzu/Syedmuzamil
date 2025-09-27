@@ -1,0 +1,59 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+span{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 100%;
+    animation-name: abc;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+
+span:nth-child(1){
+    background-color: aqua;
+    animation-delay: 0s;
+}
+span:nth-child(2){
+    background-color: rgb(105, 128, 128);
+    animation-delay: 1s;
+}
+span:nth-child(3){
+    background-color: rgb(55, 0, 255);
+    animation-delay: 2s;
+}
+span:nth-child(4){
+    background-color: red;
+    animation-delay: 3s;
+}
+span:nth-child(5){
+    background-color: antiquewhite;
+    animation-delay: 4s;
+}
+span:nth-child(6){
+    background-color: wheat;
+    animation-delay: 5s;
+}
+
+@keyframes abc {
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(-100px);
+    }
+}
+
